@@ -48,9 +48,9 @@ app-rail overflow-y-auto bg-transparent border-surface-500/30 h-full
 		<ul class="mt-5">
 			<SidebarList icon={dashboardIcon} label="Dashboard" href="/user/dashboard" />
 			<SidebarList icon={projectsIcons} label="Projects" href="/user/projects" />
-			<SidebarList icon={settingsIcon} label="Settings" href="/user/settings" />
 			<SidebarList icon={membersIcons} label="Members" href="/user/members" />
 			<SidebarList icon={reportsIcon} label="Reports" href="/user/report" />
+			<SidebarList icon={settingsIcon} label="Settings" href="/user/settings" />
 		</ul>
 		<div class="w-full">
 			<ul>
