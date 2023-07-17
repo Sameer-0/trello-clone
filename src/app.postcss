@@ -1,5 +1,20 @@
+:root {
+	--sidebar-width: 256px;
+}
 /*place global styles here */
 html,
 body {
 	@apply h-full overflow-hidden;
+}
+
+@media (max-width: 768px) {
+	:root {
+		--sidebar-width: 128px;
+	}
+}
+
+@media (max-width: 640px) {
+	:root {
+		--sidebar-width: 0;
+	}
 }
