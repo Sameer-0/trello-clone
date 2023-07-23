@@ -1,5 +1,5 @@
 <script>
-	import { SidebarList } from '.';
+	import { SidebarListOverlay } from '.';
 	let dashboardIcon = `			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				fill="none"
@@ -35,8 +35,8 @@
 </script>
 
 <nav
-	class="z-[999999999999] sidebar relative w-0 sm:w-32 md:w-64 border-r-[0.5px] border-gray-500 min-h-full shadow-2xl pt-2
-app-rail overflow-y-auto bg-transparent border-surface-500/30 h-full
+	class="z-[99] sidebar relative w-[250px] border-r-[0.5px] border-gray-500 min-h-full shadow-2xl pt-2
+app-rail overflow-y-auto bg-transparent border-surface-500/30 h-full rounded-l-none
 "
 >
 	<a href="/">
@@ -44,17 +44,17 @@ app-rail overflow-y-auto bg-transparent border-surface-500/30 h-full
 			<h1 class="text-4xl font-serif">DS</h1>
 		</div>
 	</a>
-	<div class="absolute h-[88%] w-full flex flex-col justify-between">
+	<div class="absolute h-[90%] w-full flex flex-col justify-between">
 		<ul class="mt-5">
-			<SidebarList icon={dashboardIcon} label="Dashboard" href="/user/dashboard" />
-			<SidebarList icon={projectsIcons} label="Projects" href="/user/projects" />
-			<SidebarList icon={membersIcons} label="Members" href="/user/members" />
-			<SidebarList icon={reportsIcon} label="Reports" href="/user/report" />
-			<SidebarList icon={settingsIcon} label="Settings" href="/user/settings" />
+			<SidebarListOverlay icon={dashboardIcon} label="Dashboard" href="/user/dashboard" />
+			<SidebarListOverlay icon={projectsIcons} label="Projects" href="/user/projects" />
+			<SidebarListOverlay icon={membersIcons} label="Members" href="/user/members" />
+			<SidebarListOverlay icon={reportsIcon} label="Reports" href="/user/report" />
+			<SidebarListOverlay icon={settingsIcon} label="Settings" href="/user/settings" />
 		</ul>
 		<div class="w-full">
 			<ul>
-				<SidebarList icon={logoutIcon} label="Logout" href="/logout" />
+				<SidebarListOverlay icon={logoutIcon} label="Logout" href="/logout" />
 			</ul>
 		</div>
 	</div>

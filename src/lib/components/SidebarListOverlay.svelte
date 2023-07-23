@@ -15,10 +15,7 @@
 		<div class="w-10 h-7">
 			{@html icon}
 		</div>
-		<div
-			class="w-full pr-2 hidden md:block font-semibold dark:border-black"
-			class:border-r-[3px]={active}
-		>
+		<div class="w-full pr-2 font-semibold dark:border-black" class:border-r-[3px]={active}>
 			{label}
 		</div>
 	</a>

@@ -2,11 +2,10 @@
 	import { Avatar, LightSwitch, drawerStore, type DrawerSettings } from '@skeletonlabs/skeleton';
 
 	const drawerSettings: DrawerSettings = {
-		// Provide your property overrides:
 		bgDrawer: 'bg-purple-900 text-white',
 		bgBackdrop: 'bg-gradient-to-tr from-indigo-500/50 via-purple-500/50 to-pink-500/50',
 		width: 'w-[250px]',
-		padding: 'p-4',
+		padding: 'pr-4',
 		rounded: 'rounded-xl'
 	};
 
@@ -21,7 +20,7 @@
 	}
 </script>
 
-<header class="h-16 shadow-2xl app-bar flex flex-col bg-surface-100-800-token">
+<header class="h-16 shadow-xl app-bar flex flex-col bg-surface-100-800-token">
 	<div class="flex items-center justify-between pr-5">
 		<button class="hidden sm:block" />
 		<button
@@ -46,17 +45,19 @@
 				/>
 			</svg>
 		</button>
-        <div class="w-1/3">
-            <input type="search" placeholder="Search..." class="input variant-form-material rounded-3xl">
-        </div>
-		<div class="w-36 flex gap-5 justify-end">
-			<button>
-				<LightSwitch />
-			</button>
+		<div class="w-1/3">
+			<input
+				type="search"
+				placeholder="Search..."
+				class="input variant-form-material rounded-3xl"
+			/>
+		</div>
+		<div class="w-36 flex gap-5 justify-end items-center">
+			<LightSwitch />
 			<Avatar
 				initials="SS"
 				border="border-2 border-surface-300-600-token hover:!border-primary-500"
-				src="https://images.unsplash.com/photo-1617296538902-887900d9b592?ixid=M3w0Njc5ODF8MHwxfGFsbHx8fHx8fHx8fDE2ODc5NzExMDB8&ixlib=rb-4.0.3&w=128&h=128&auto=format&fit=crop"
+				src="https://tse3.mm.bing.net/th?id=OIP.UYtoA1kbuiWmh3QFGHUgjAAAAA&pid=Api&P=0&h=180"
 				width="w-[40%]"
 				rounded="rounded-full"
 			/>

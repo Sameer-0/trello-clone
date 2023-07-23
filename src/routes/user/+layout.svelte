@@ -1,21 +1,19 @@
 <script>
-	import { Sidebar, Header } from '$lib/components';
-	import { AppShell, Drawer, drawerStore } from '@skeletonlabs/skeleton';
-	drawerStore.close();
+	import { Sidebar, Header, SidebarOverlay } from '$lib/components';
+	import { AppShell, Drawer } from '@skeletonlabs/skeleton';
 </script>
 
 <AppShell>
-	<Drawer />
+	<Drawer>
+		<SidebarOverlay />
+	</Drawer>
 	<svelte:fragment slot="sidebarLeft">
 		<Sidebar />
 	</svelte:fragment>
 	<svelte:fragment slot="pageHeader">
 		<Header />
 	</svelte:fragment>
-	<main class="p-3">
-        <!-- {#if $page.url.pathname.includes('/dashboard/')}
-             <BreadCrumbs />
-        {/if} -->
+	<main class="pt-6 px-2 md:pl-9 md:pr-2 min-h-full overflow-y-hidden">
 		<slot />
 	</main>
 </AppShell>
